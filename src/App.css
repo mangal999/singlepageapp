@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #467df3;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+h1{
+  color: aliceblue;
+}
+.options{
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.options button{
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 400px;
+  border-radius: 10px;
+  background: orange;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  padding: 10px;
+}
+.newCityForm{
+  display: none;
+  width: 800px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newCityForm input{
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 400px;
+  border-radius: 10px;
+  background: rgb(168, 216, 159);
+  color: white;
+  margin-bottom: 10px;
+}
+.newCityForm button{
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 400px;
+  border-radius: 10px;
+  background: rgb(241, 148, 41);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.cityList{
+  display: none;
+  width: 800px;
+  flex-direction: column;
+}
+
+.listImage{
+  display: flex;
+  border: olive 1px solid;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.thumbnail{
+  margin: 10px;
+}
+
+span{
+  color: white;
+  font-size: 40px;
 }
